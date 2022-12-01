@@ -20,14 +20,17 @@ int main(){
     adiciona_carta(minhas_cartas, c2);
     adiciona_carta(minhas_cartas, c3);
     adiciona_carta(minhas_cartas, c4);
+    //adiciona_carta_no_inicio(minhas_cartas, c5);
 
     Carta acesso;
 
     acessa_carta(minhas_cartas, 2, &acesso);
 
-    imprimeCarta(&acesso);
-
+    printa_elementos(minhas_cartas);
+    gira_baralho(minhas_cartas);
+    printf("depois de girar\n");
+    printa_elementos(minhas_cartas);
+ 
     destroi_baralho(minhas_cartas);
-
 
 }
