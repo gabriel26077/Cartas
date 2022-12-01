@@ -72,7 +72,7 @@ int descarta_carta(Baralho* baralho, int index){
 int destroi_baralho(Baralho* baralho){
     if(baralho == NULL)return 0;
     while(baralho->tam > 0)
-        apaga_carta(baralho, 0);
+        descarta_carta(baralho, 0);
     free(baralho);
     return 1;
 }
