@@ -16,7 +16,7 @@ int adiciona_carta(Baralho* baralho, Carta carta);
 
 int acessa_carta(Baralho* baralho, int index, Carta* carta);
 
-int apaga_carta(Baralho* baralho, int index);
+int descarta_carta(Baralho* baralho, int index);
 
 int destroi_baralho(Baralho* baralho);
 
